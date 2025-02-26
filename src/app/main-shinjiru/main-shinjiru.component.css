@@ -1,0 +1,47 @@
+.main-color{
+    background-color: #161616
+}
+.content{
+    color: #6366f1;
+}
+.content2{
+    color: white;
+}
+.r{
+    border: 1px solid red;
+}
+p{
+    
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.svg-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100%;
+    margin-left: 20px;     
+      
+  }
+  
+
+  #speaker {
+    animation: soundAnimation 1.8s infinite alternate ease-in-out;
+    width: 400px; 
+    height: 300px; 
+  }
+  
+
+  @keyframes soundAnimation {
+    0% {
+      transform: scale(1); 
+    }
+    50% {
+      transform: scale(1.1); 
+    }
+    100% {
+      transform: scale(1); 
+    }
+  }
+  

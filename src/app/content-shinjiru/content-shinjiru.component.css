@@ -1,0 +1,102 @@
+.features-section {
+    .feature-card {
+      background-color: #101010;
+      border-radius: 1rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .feature-icon i {
+        color: #1046aa;
+      }
+      h4 {
+        color: white;
+      }
+      p {
+        color: white;
+        font-size: 0.8rem;
+        line-height: 1.6;
+      }
+    }
+  }
+  .r{
+      border: 1px solid red;
+  }
+
+  .flip-card {
+      background-color: transparent;
+      perspective: 1000px; 
+      border: none;
+      height: 100%;
+      transition: transform 2s;
+    }
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+ 
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden; 
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    .flip-card-front {
+      background-color: #ffffff;
+      color: #333;
+    }
+    
+ 
+    .flip-card-back {
+      background-color: #f5f5f5;
+      color: #444;
+      transform: rotateY(180deg);
+    }
+    
+    
+    .flip-card:hover .flip-card-front,
+    .flip-card:hover .flip-card-back {
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    .feature-icon i {
+      font-size: 2rem;
+    }
+    .flip-icon {
+      font-size: 100px; 
+      width: 300px;
+      height: 200px; 
+      transition: transform 0.6s ease-in-out; 
+    }
+    
+    .flip-icon:hover {
+      transform: rotateY(180deg); 
+    }
+    .main-color{
+        background-color:  #151515;
+    }
+    .content{
+        color: #6366f1;
+    }
+    .content2{
+        color: white;
+    }

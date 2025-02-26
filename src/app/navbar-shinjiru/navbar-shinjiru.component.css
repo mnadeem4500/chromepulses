@@ -1,0 +1,49 @@
+.bg-navbar {
+    background-color: #111111;
+}
+
+
+.navbar-brand {
+    color: white; 
+    font-weight: bold; 
+}
+
+
+.nav-link {
+    color: white; 
+    font-weight: 500; 
+    text-decoration: none; 
+    position: relative; 
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+
+.nav-link:hover {
+    color: blue; 
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: blue; 
+    transition: width 0.3s ease-in-out;
+}
+
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+.nav-item {
+    position: relative;
+}
+
+
+.nav-item:hover .nav-link {
+    color: blue; 
+}
